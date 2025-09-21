@@ -1,0 +1,16 @@
+ID,Name,RollNumber,Department,Branch,AttendancePercentage,ExamSubject
+m1,Aman Kumar,CSE001,Engineering,CSE,45.0,Mathematics
+m2,Priya Sharma,CSE002,Engineering,CSE,78.5,Mathematics
+m3,Rohit Patel,ECE001,Engineering,ECE,62.0,Mathematics
+m4,Sneha Gupta,ME001,Engineering,ME,39.5,Mathematics
+m5,Vikram Singh,CSE003,Engineering,CSE,81.0,Mathematics
+p1,Kavya Reddy,ECE002,Engineering,ECE,92.5,Physics
+p2,Arjun Verma,ME002,Engineering,ME,56.0,Physics
+p3,Pooja Iyer,CSE004,Engineering,CSE,43.5,Physics
+p4,Rajesh Nair,ECE003,Engineering,ECE,75.0,Physics
+p5,Anita Joshi,ME003,Engineering,ME,68.5,Physics
+d1,Kiran Rao,CE001,Engineering,CE,51.0,Engineering Drawing
+d2,Manish Shah,CE002,Engineering,CE,84.0,Engineering Drawing
+d3,Divya Menon,EE001,Engineering,EE,29.5,Engineering Drawing
+d4,Suresh Kumar,EE002,Engineering,EE,73.5,Engineering Drawing
+d5,Ritu Saxena,CE003,Engineering,CE,66.0,Engineering Drawing
