@@ -1,4 +1,3 @@
-// FileHandler.java - Final version with minimal console output and complete file operations
 import Models.ExamHall;
 import Models.Seat;
 import Models.Student;
@@ -238,4 +237,5 @@ class FileHandler {
 //            System.out.println("Error creating sample file: " + e.getMessage());
 //        }
 //    }
+
 }
