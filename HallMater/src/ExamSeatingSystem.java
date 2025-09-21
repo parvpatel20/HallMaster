@@ -8,12 +8,11 @@ import Strategies.SeatingStrategy;
 
 class ExamSeatingSystem {
 
-    // Main method - only file processing, no console output
     public boolean processExamFromFile(String inputCSVPath, String outputReportPath,
                                        List<ExamHall> availableHalls,
                                        Map<String, SeatingStrategy> hallStrategyMap) {
 
-        // Read students from CSV file (minimal console feedback)
+        // Read students from CSV file
         List<Student> allStudents = FileHandler.readStudentsFromCSV(inputCSVPath);
 
         if (allStudents.isEmpty()) {
@@ -21,9 +20,9 @@ class ExamSeatingSystem {
             return false;
         }
 
-        // Generate seating plan (no console output)
+        // Generate seating plan
         if (generateSeatingPlan(allStudents, availableHalls, hallStrategyMap)) {
-            // Write results to output file (overwrites previous content completely)
+            // Write results to output file
             FileHandler.writeSeatingPlanToFile(outputReportPath, availableHalls, hallStrategyMap, allStudents);
             System.out.println("✅ Seating plan generated successfully!");
             System.out.println("📄 Report saved to: " + outputReportPath);
@@ -33,11 +32,11 @@ class ExamSeatingSystem {
         return false;
     }
 
-    // Internal processing - no console output, only validation
+    // Internal processing
     private boolean generateSeatingPlan(List<Student> allStudents, List<ExamHall> availableHalls,
                                         Map<String, SeatingStrategy> hallStrategyMap) {
 
-        // Validate total capacity (silent check)
+        // Validate total capacity
         int totalStudents = allStudents.size();
         int totalCapacity = availableHalls.stream().mapToInt(ExamHall::getCapacity).sum();
 
@@ -51,13 +50,13 @@ class ExamSeatingSystem {
             hall.clearAllSeats();
         }
 
-        // Distribute students across halls (silent processing)
+        // Distribute students across halls
         distributeStudentsAcrossHalls(allStudents, availableHalls, hallStrategyMap);
 
         return true;
     }
 
-    // Silent distribution - no console output
+    // Silent distribution
     private void distributeStudentsAcrossHalls(List<Student> allStudents, List<ExamHall> availableHalls,
                                                Map<String, SeatingStrategy> hallStrategyMap) {
 
@@ -87,4 +86,5 @@ class ExamSeatingSystem {
             }
         }
     }
+
 }
